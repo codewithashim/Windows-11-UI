@@ -13,7 +13,7 @@ body {
 }
 
 .taskbar {
-  z-index: 999999;
+  z-index: 9999;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -35,15 +35,18 @@ body {
 }
 
 .startManu {
-  width: 100%;
   position: absolute;
-  bottom: 3.8rem;
+  // bottom: 65px;
+  bottom: -865px;
+  width: 100%;
   display: flex;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
+  
   img {
-      border-radius: 0.5rem;
-      width: 500px;
-      height: 500px;
-      object-fit: cover;
+    width: 490px;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
 }
