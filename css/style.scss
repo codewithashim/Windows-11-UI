@@ -4,40 +4,46 @@
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-
-}
-
-#vedioBg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  background: url("../img/bg.jpeg");
+  background-position: center;
 }
 
 .taskbar {
-  padding: 0.3rem;
-  background: whitesmoke;
+  z-index: 999999;
   width: 100%;
   position: absolute;
   bottom: 0;
+  padding: 0.4rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
 
-  .rightTask {
-    position: absolute;
-    right: 0;
+.rightTask {
+  position: absolute;
+  right: 0;
+}
+
+#vedioBg {
+  width: 100%;
+  height: max-content;
+}
+
+.startManu {
+  width: 100%;
+  position: absolute;
+  bottom: 3.8rem;
+  display: flex;
+  justify-content: center;
+  img {
+      border-radius: 0.5rem;
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
   }
 }
